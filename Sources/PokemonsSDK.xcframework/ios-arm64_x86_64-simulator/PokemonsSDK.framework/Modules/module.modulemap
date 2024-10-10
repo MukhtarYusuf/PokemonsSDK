@@ -1,0 +1,6 @@
+framework module PokemonsSDK {
+  umbrella header "PokemonsSDK.h"
+
+  export *
+  module * { export * }
+}

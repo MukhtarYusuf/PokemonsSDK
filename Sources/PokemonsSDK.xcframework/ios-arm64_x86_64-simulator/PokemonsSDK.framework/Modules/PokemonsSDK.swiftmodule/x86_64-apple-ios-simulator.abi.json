@@ -1,0 +1,1330 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PokemonServiceProtocol",
+        "printedName": "PokemonServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchPokemons",
+            "printedName": "fetchPokemons(uriString:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PokemonsSDK.PokemonServiceResponse, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PokemonsSDK.PokemonServiceResponse, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PokemonServiceResponse",
+                        "printedName": "PokemonsSDK.PokemonServiceResponse",
+                        "usr": "s:11PokemonsSDK22PokemonServiceResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK22PokemonServiceProtocolP05fetchA09uriString10completionySS_ys6ResultOyAA0cD8ResponseCs5Error_pGctF",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceProtocolP05fetchA09uriString10completionySS_ys6ResultOyAA0cD8ResponseCs5Error_pGctF",
+            "moduleName": "PokemonsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PokemonsSDK.PokemonServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : PokemonsSDK.PokemonServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11PokemonsSDK22PokemonServiceProtocolP",
+        "mangledName": "$s11PokemonsSDK22PokemonServiceProtocolP",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PokemonService",
+        "printedName": "PokemonService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PokemonService",
+                "printedName": "PokemonsSDK.PokemonService",
+                "usr": "s:11PokemonsSDK14PokemonServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK14PokemonServiceCACycfc",
+            "mangledName": "$s11PokemonsSDK14PokemonServiceCACycfc",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPokemons",
+            "printedName": "fetchPokemons(uriString:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PokemonsSDK.PokemonServiceResponse, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PokemonsSDK.PokemonServiceResponse, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PokemonServiceResponse",
+                        "printedName": "PokemonsSDK.PokemonServiceResponse",
+                        "usr": "s:11PokemonsSDK22PokemonServiceResponseC"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK14PokemonServiceC05fetchA09uriString10completionySS_ys6ResultOyAA0cD8ResponseCs5Error_pGctF",
+            "mangledName": "$s11PokemonsSDK14PokemonServiceC05fetchA09uriString10completionySS_ys6ResultOyAA0cD8ResponseCs5Error_pGctF",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11PokemonsSDK14PokemonServiceC",
+        "mangledName": "$s11PokemonsSDK14PokemonServiceC",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PokemonServiceProtocol",
+            "printedName": "PokemonServiceProtocol",
+            "usr": "s:11PokemonsSDK22PokemonServiceProtocolP",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PokemonServiceResponse",
+        "printedName": "PokemonServiceResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC5countSivp",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC5countSivp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC5countSivg",
+                "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC5countSivg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "next",
+            "printedName": "next",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC4nextSSSgvp",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC4nextSSSgvp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC4nextSSSgvg",
+                "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC4nextSSSgvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "previous",
+            "printedName": "previous",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC8previousSSSgvp",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC8previousSSSgvp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC8previousSSSgvg",
+                "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC8previousSSSgvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "results",
+            "printedName": "results",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PokemonsSDK.Pokemon]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pokemon",
+                    "printedName": "PokemonsSDK.Pokemon",
+                    "usr": "s:11PokemonsSDK7PokemonV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC7resultsSayAA0C0VGvp",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC7resultsSayAA0C0VGvp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PokemonsSDK.Pokemon]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pokemon",
+                        "printedName": "PokemonsSDK.Pokemon",
+                        "usr": "s:11PokemonsSDK7PokemonV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC7resultsSayAA0C0VGvg",
+                "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC7resultsSayAA0C0VGvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(count:results:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PokemonServiceResponse",
+                "printedName": "PokemonsSDK.PokemonServiceResponse",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PokemonsSDK.Pokemon]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pokemon",
+                    "printedName": "PokemonsSDK.Pokemon",
+                    "usr": "s:11PokemonsSDK7PokemonV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC5count7resultsACSi_SayAA0C0VGtcfc",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC5count7resultsACSi_SayAA0C0VGtcfc",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PokemonServiceResponse",
+                "printedName": "PokemonsSDK.PokemonServiceResponse",
+                "usr": "s:11PokemonsSDK22PokemonServiceResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK22PokemonServiceResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11PokemonsSDK22PokemonServiceResponseC",
+        "mangledName": "$s11PokemonsSDK22PokemonServiceResponseC",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EmptyRequestBody",
+        "printedName": "EmptyRequestBody",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK16EmptyRequestBodyC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11PokemonsSDK16EmptyRequestBodyC6encode2toys7Encoder_p_tKF",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11PokemonsSDK16EmptyRequestBodyC",
+        "mangledName": "$s11PokemonsSDK16EmptyRequestBodyC",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpMethod",
+        "printedName": "HttpMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PokemonsSDK.HttpMethod.Type) -> PokemonsSDK.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "PokemonsSDK.HttpMethod",
+                    "usr": "s:11PokemonsSDK10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PokemonsSDK.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "PokemonsSDK.HttpMethod",
+                        "usr": "s:11PokemonsSDK10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PokemonsSDK10HttpMethodO3getyA2CmF",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO3getyA2CmF",
+            "moduleName": "PokemonsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PokemonsSDK.HttpMethod.Type) -> PokemonsSDK.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "PokemonsSDK.HttpMethod",
+                    "usr": "s:11PokemonsSDK10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PokemonsSDK.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "PokemonsSDK.HttpMethod",
+                        "usr": "s:11PokemonsSDK10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PokemonsSDK10HttpMethodO3putyA2CmF",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO3putyA2CmF",
+            "moduleName": "PokemonsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PokemonsSDK.HttpMethod.Type) -> PokemonsSDK.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "PokemonsSDK.HttpMethod",
+                    "usr": "s:11PokemonsSDK10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PokemonsSDK.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "PokemonsSDK.HttpMethod",
+                        "usr": "s:11PokemonsSDK10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PokemonsSDK10HttpMethodO4postyA2CmF",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO4postyA2CmF",
+            "moduleName": "PokemonsSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PokemonsSDK.HttpMethod.Type) -> PokemonsSDK.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "PokemonsSDK.HttpMethod",
+                    "usr": "s:11PokemonsSDK10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PokemonsSDK.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "PokemonsSDK.HttpMethod",
+                        "usr": "s:11PokemonsSDK10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11PokemonsSDK10HttpMethodO6deleteyA2CmF",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO6deleteyA2CmF",
+            "moduleName": "PokemonsSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PokemonsSDK.HttpMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "PokemonsSDK.HttpMethod",
+                    "usr": "s:11PokemonsSDK10HttpMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK10HttpMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK10HttpMethodO8rawValueSSvp",
+            "mangledName": "$s11PokemonsSDK10HttpMethodO8rawValueSSvp",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK10HttpMethodO8rawValueSSvg",
+                "mangledName": "$s11PokemonsSDK10HttpMethodO8rawValueSSvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11PokemonsSDK10HttpMethodO",
+        "mangledName": "$s11PokemonsSDK10HttpMethodO",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseApiService",
+        "printedName": "BaseApiService",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseApiService",
+                "printedName": "PokemonsSDK.BaseApiService",
+                "usr": "s:11PokemonsSDK14BaseApiServiceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK14BaseApiServiceCACycfc",
+            "mangledName": "$s11PokemonsSDK14BaseApiServiceCACycfc",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetch",
+            "printedName": "fetch(uriString:httpMethod:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpMethod",
+                "printedName": "PokemonsSDK.HttpMethod",
+                "usr": "s:11PokemonsSDK10HttpMethodO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK14BaseApiServiceC5fetch9uriString10httpMethod10completionySS_AA04HttpJ0Oys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "mangledName": "$s11PokemonsSDK14BaseApiServiceC5fetch9uriString10httpMethod10completionySS_AA04HttpJ0Oys6ResultOy10Foundation4DataVs5Error_pGctF",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetch",
+            "printedName": "fetch(uriString:httpMethod:body:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpMethod",
+                "printedName": "PokemonsSDK.HttpMethod",
+                "usr": "s:11PokemonsSDK10HttpMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Foundation.Data, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Foundation.Data, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK14BaseApiServiceC5fetch9uriString10httpMethod4body10completionySS_AA04HttpJ0Oxys6ResultOy10Foundation4DataVs5Error_pGctSERzlF",
+            "mangledName": "$s11PokemonsSDK14BaseApiServiceC5fetch9uriString10httpMethod4body10completionySS_AA04HttpJ0Oxys6ResultOy10Foundation4DataVs5Error_pGctSERzlF",
+            "moduleName": "PokemonsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Encodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11PokemonsSDK14BaseApiServiceC",
+        "mangledName": "$s11PokemonsSDK14BaseApiServiceC",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Pokemon",
+        "printedName": "Pokemon",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK7PokemonV4nameSSvp",
+            "mangledName": "$s11PokemonsSDK7PokemonV4nameSSvp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK7PokemonV4nameSSvg",
+                "mangledName": "$s11PokemonsSDK7PokemonV4nameSSvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11PokemonsSDK7PokemonV3urlSSvp",
+            "mangledName": "$s11PokemonsSDK7PokemonV3urlSSvp",
+            "moduleName": "PokemonsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PokemonsSDK7PokemonV3urlSSvg",
+                "mangledName": "$s11PokemonsSDK7PokemonV3urlSSvg",
+                "moduleName": "PokemonsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Pokemon",
+                "printedName": "PokemonsSDK.Pokemon",
+                "usr": "s:11PokemonsSDK7PokemonV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11PokemonsSDK7PokemonV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11PokemonsSDK7PokemonV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11PokemonsSDK7PokemonV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11PokemonsSDK7PokemonV6encode2toys7Encoder_p_tKF",
+            "moduleName": "PokemonsSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11PokemonsSDK7PokemonV",
+        "mangledName": "$s11PokemonsSDK7PokemonV",
+        "moduleName": "PokemonsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 254,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/mukhtaryusuf\/Documents\/iOS Projects\/PokemonsSDK\/Sources\/PokemonsSDK\/APIClient\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 8,
+      "value": "\"DELETE\""
+    }
+  ]
+}

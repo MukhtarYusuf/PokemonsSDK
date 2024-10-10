@@ -1,0 +1,58 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PokemonsSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import PokemonsSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+public protocol PokemonServiceProtocol {
+  func fetchPokemons(uriString: Swift.String, completion: @escaping (Swift.Result<PokemonsSDK.PokemonServiceResponse, any Swift.Error>) -> Swift.Void)
+}
+public class PokemonService : PokemonsSDK.PokemonServiceProtocol {
+  public init()
+  public func fetchPokemons(uriString: Swift.String, completion: @escaping (Swift.Result<PokemonsSDK.PokemonServiceResponse, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public class PokemonServiceResponse : Swift.Codable {
+  final public let count: Swift.Int
+  final public let next: Swift.String?
+  final public let previous: Swift.String?
+  final public let results: [PokemonsSDK.Pokemon]
+  public init(count: Swift.Int, results: [PokemonsSDK.Pokemon])
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class EmptyRequestBody : Swift.Encodable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum HttpMethod : Swift.String {
+  case get
+  case put
+  case post
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class BaseApiService {
+  public typealias CompletionBlock = (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void
+  public init()
+  public func fetch(uriString: Swift.String, httpMethod: PokemonsSDK.HttpMethod, completion: @escaping PokemonsSDK.BaseApiService.CompletionBlock)
+  public func fetch<T>(uriString: Swift.String, httpMethod: PokemonsSDK.HttpMethod, body: T, completion: @escaping PokemonsSDK.BaseApiService.CompletionBlock) where T : Swift.Encodable
+  @objc deinit
+}
+public struct Pokemon : Swift.Codable {
+  public let name: Swift.String
+  public let url: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension PokemonsSDK.HttpMethod : Swift.Equatable {}
+extension PokemonsSDK.HttpMethod : Swift.Hashable {}
+extension PokemonsSDK.HttpMethod : Swift.RawRepresentable {}
