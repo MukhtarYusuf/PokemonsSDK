@@ -7,5 +7,5 @@ Pod::Spec.new do |spec|
   #spec.license      = { :type => 'MIT' }
   spec.author       = { 'Muk' => 'your_email@example.com' }
   spec.source       = { :git => 'https://github.com/MukhtarYusuf/PokemonsSDK.git', :branch => 'test_branch' }
-  spec.ios.vendored_framework = '/Sources/PokemonsSDK.xcframework'
+  spec.ios.vendored_framework = 'Sources/PokemonsSDK.xcframework'
 end
